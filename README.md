@@ -29,17 +29,17 @@ An IIM Calcutta MBA and an Electronics & Communication engineer from VNIT Nagpur
 
 ---
 
-## What it does
+## A planning partner, not a coder
 
 The skill acts as a planning partner, not a coder. You talk your idea through with it, and it writes up a clean plan: what you are building, how it fits together, the decisions you made along the way, and a handoff note for whoever codes it. The build then starts from a real spec instead of a fuzzy memory of a conversation.
 
-## Why you'd want this
+## The "why did we decide that?" problem it fixes
 
 Most projects start with a great conversation and, three weeks later, a quiet "wait, why did we decide that?" The thinking lives in someone's head or scattered across old chats, and whoever builds it (usually future-you) ends up guessing.
 
 This skill catches that thinking and writes it down while it is still fresh. Your code ships to GitHub as normal. Your planning stays on your machine.
 
-## What it feels like to use
+## A planning session, start to finish
 
 You say:
 
@@ -49,7 +49,7 @@ It asks a handful of questions first. Who is it for? How serious is this, a week
 
 When the plan is solid, you say `ready for Claude Code` and it hands you a short brief to paste into a fresh build session. That is the whole loop: you talk, it documents, you review.
 
-## Quick start
+## Installing it (or trying it with no install)
 
 **On Claude Code,** install it:
 
@@ -64,7 +64,7 @@ Restart if it asks. Then type `/animesh-product-builder-skills`, or just say "ne
 
 > Read https://raw.githubusercontent.com/animesh-builds/animesh-product-builder-skills/main/skills/animesh-product-builder-skills/SKILL.md and act as the planning partner it describes. Pull in the files it points to under `references/` when you need them, and start by asking me the discovery questions.
 
-## What it writes
+## The planning documents it produces
 
 Everything lands in a `_planning/` folder inside your project:
 
@@ -78,15 +78,15 @@ Everything lands in a `_planning/` folder inside your project:
 
 Not every project needs all of that. The skill picks a tier with you at the start. Lite for a weekend build, Standard for a real MVP, Full for something that ships or handles regulated data, and it sizes the kit to fit.
 
-## Your planning stays private
+## How it keeps planning docs out of your remote
 
 The skill treats your repo as two halves. Your application code is committed and pushed like always. The `_planning/` folder is gitignored and never leaves your machine. To make that stick, the skill writes the gitignore rules, adds a pre-commit guard, and checks the planning folder is actually excluded before your first commit. The `CLAUDE.md` it commits holds only the conventions that are safe to share. Anything sensitive stays in `_planning/`.
 
-## A note on editions
+## This edition vs the fuller private one
 
 This is the essentials edition. It is complete and genuinely useful on its own. There is also a fuller private edition with deeper templates and a few extra documents (an AI spec, a testing strategy, a glossary, and a heavier architecture template), but you do not need it to get real work done with this one.
 
-## For an AI agent pointed at this repo
+## Instructions for an AI agent running this skill from the repo
 
 If you are an agent asked to run this skill straight from the repository:
 
@@ -96,7 +96,7 @@ If you are an agent asked to run this skill straight from the repository:
 4. Write to disk. Do not paste whole documents into the chat.
 5. Never commit or push `_planning/`. Set up the guard from `references/git-safety.md` first.
 
-## Repo layout
+## What's in this repository
 
 ```
 .
@@ -109,7 +109,7 @@ If you are an agent asked to run this skill straight from the repository:
 └── LICENSE
 ```
 
-## Validation
+## How the bundle stays clean (validation)
 
 `scripts/validate_bundle.py` checks the manifest, the skill's frontmatter, and that no private files slipped in. Run `python3 scripts/validate_bundle.py`. The same check runs in CI on every push.
 
