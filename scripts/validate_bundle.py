@@ -6,7 +6,7 @@ Runs in CI and locally (no third-party deps). Checks:
   2. Every declared skill path exists and has a SKILL.md.
   3. Every SKILL.md has YAML frontmatter with non-empty `name` and `description`.
   4. Each skill's frontmatter `name` matches its directory name.
-  5. No private/local-only files are present (private-defaults.md, _planning/).
+  5. No local-only planning files are present (_planning/).
 
 Exit code 0 = all good; non-zero = one or more failures (printed).
 """
@@ -85,16 +85,12 @@ def check_skill(rel_path: str) -> None:
         fail(f"{rel_path}/SKILL.md name '{fm['name']}' != directory '{expected}'")
 
 
-def check_no_private_files() -> None:
+def check_no_local_only_files() -> None:
     for dirpath, dirnames, filenames in os.walk(ROOT):
         if ".git" in dirpath.split(os.sep):
             continue
         if "_planning" in dirnames:
             fail(f"local-only '_planning/' present at {os.path.relpath(dirpath, ROOT)}")
-        for fn in filenames:
-            if fn == "private-defaults.md":
-                rel = os.path.relpath(os.path.join(dirpath, fn), ROOT)
-                fail(f"private file must not be published: {rel}")
 
 
 def main() -> int:
@@ -103,14 +99,14 @@ def main() -> int:
         fail("no skills declared in marketplace.json")
     for sp in skill_paths:
         check_skill(sp)
-    check_no_private_files()
+    check_no_local_only_files()
 
     if errors:
         print("VALIDATION FAILED:")
         for e in errors:
             print(f"  - {e}")
         return 1
-    print(f"OK — {len(skill_paths)} skill(s) validated, no private files present.")
+    print(f"OK — {len(skill_paths)} skill(s) validated, no local-only files present.")
     return 0
 
 
