@@ -1,6 +1,10 @@
 # animesh-skills
 
+[![validate](https://github.com/animesh-builds/animesh-product-builder-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/animesh-builds/animesh-product-builder-skills/actions/workflows/validate.yml)
+
 A growing collection of [Claude Code](https://docs.claude.com/en/docs/claude-code) skills, distributed as a plugin marketplace.
+
+> Bundle integrity (valid manifest, skill frontmatter, and no private/local-only files) is enforced on every push by CI — see [`scripts/validate_bundle.py`](scripts/validate_bundle.py). Run it locally with `python3 scripts/validate_bundle.py`.
 
 ## Install
 
