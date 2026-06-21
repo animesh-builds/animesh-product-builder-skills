@@ -78,7 +78,7 @@ Everything lands in a `_planning/` folder inside your project:
 - `session-history.md`: where you left off, so you can pick the thread back up later
 - `CLAUDE.md` and `_planning/claude-context.md`: the handoff for the build phase
 
-Not every project needs all of that. The skill picks a tier with you at the start. Lite for a weekend build, Standard for a real MVP, Full for something that ships or handles regulated data, and it sizes the kit to fit.
+Not every project needs all of that. At the start, the skill sizes the plan to the project: a quick prototype gets a light pass, a more serious build gets the full set above. It writes what fits and skips what does not.
 
 ## How it keeps planning docs out of your remote
 
