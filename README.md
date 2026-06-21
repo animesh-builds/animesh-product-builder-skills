@@ -4,6 +4,8 @@
 
 > Plan your software project properly before you build it. A planning skill for [Claude Code](https://docs.claude.com/en/docs/claude-code).
 
+**New here?** Jump to [how to try it](#installing-it-or-trying-it-with-no-install). It takes about a minute, and there is a no-install option if you just want to see it work.
+
 ## About the author
 
 Animesh is an AI builder and product manager working at the intersection of payments, fintech, and agentic commerce, and building in public the whole way.
