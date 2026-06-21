@@ -1,0 +1,22 @@
+{
+  "name": "animesh-skills",
+  "owner": {
+    "name": "animesh-builds",
+    "email": "animesh-builds@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "A growing collection of Claude Code skills by animesh-builds.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "animesh-product-builder-skills",
+      "description": "Product architect and planning partner: scopes, designs, and documents a software project into a local planning doc kit (PRD, architecture, design language, content, ADR/decision log, session history, and a Claude Code handoff) so it can be handed off and built with no major judgment calls left open.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/animesh-product-builder-skills"
+      ]
+    }
+  ]
+}

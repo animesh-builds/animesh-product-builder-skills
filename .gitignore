@@ -1,0 +1,9 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Never publish private skill editions or local-only defaults
+**/private-defaults.md
+_planning/
