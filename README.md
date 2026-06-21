@@ -84,10 +84,6 @@ Not every project needs all of that. The skill picks a tier with you at the star
 
 The skill treats your repo as two halves. Your application code is committed and pushed like always. The `_planning/` folder is gitignored and never leaves your machine. To make that stick, the skill writes the gitignore rules, adds a pre-commit guard, and checks the planning folder is actually excluded before your first commit. The `CLAUDE.md` it commits holds only the conventions that are safe to share. Anything sensitive stays in `_planning/`.
 
-## This edition vs the fuller private one
-
-This is the essentials edition. It is complete and genuinely useful on its own. There is also a fuller private edition with deeper templates and a few extra documents (an AI spec, a testing strategy, a glossary, and a heavier architecture template), but you do not need it to get real work done with this one.
-
 ## Instructions for an AI agent running this skill from the repo
 
 If you are an agent asked to run this skill straight from the repository:
@@ -113,7 +109,7 @@ If you are an agent asked to run this skill straight from the repository:
 
 ## How the bundle stays clean (validation)
 
-`scripts/validate_bundle.py` checks the manifest, the skill's frontmatter, and that no private files slipped in. Run `python3 scripts/validate_bundle.py`. The same check runs in CI on every push.
+`scripts/validate_bundle.py` checks the manifest, the skill's frontmatter, and that no local-only files slipped in. Run `python3 scripts/validate_bundle.py`. The same check runs in CI on every push.
 
 ## License
 
