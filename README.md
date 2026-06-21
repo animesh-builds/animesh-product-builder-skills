@@ -26,14 +26,14 @@ A **product architect and planning partner**. It doesn't write application code 
 It produces a local planning doc kit under `_planning/`:
 
 - **`prd.md`** — what you're building and why
-- **`architecture.md`** — tech, NFRs, testing, security, risk & rollback, observability, cost
-- **`content-guide.md`** / **`design-language.md`** / **`main-content.md`** — voice, visual system, copy
+- **`architecture.md`** — tech stack, data model, API, NFRs, security, risk & rollback
+- **`content-guide.md`** / **`design-language.md`** — voice and visual system
 - **`setup-guide.md`** / **`gitignore-guidance.md`** — environment and what stays local
 - **`decisions.md`** — a lightweight ADR log (why each call was made)
 - **`session-history.md`** — cross-session memory so context carries over
 - **`CLAUDE.md`** (committed conventions) + **`_planning/claude-context.md`** (private handover)
 
-Optional add-ons for jargon-heavy domains (`glossary.md`), LLM features (`ai-spec.md`), and complex test strategies (`testing.md`).
+> This is the **essentials edition** — a complete, working planning kit. Deeper, more opinionated template depth and specialized add-ons (LLM/AI spec, dedicated testing strategy, domain glossaries, full enterprise-grade architecture) are kept in the author's private edition.
 
 **Use it when** starting a new project, scoping or designing before writing code, setting up planning docs, resuming a planning session, adding the kit to an existing (brownfield) codebase, or preparing a "ready for Claude Code" handoff.
 
