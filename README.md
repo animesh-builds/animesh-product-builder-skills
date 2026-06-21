@@ -49,18 +49,26 @@ One clear plan for your project, in one place: what you are building and why, ho
 
 ## How to start
 
-If you use Claude Code, install it:
+There are two ways in, depending on what you use.
+
+### Install it in Claude Code
+
+Skills live in Claude Code (the coding app), so that is where you install one for good. Run these two lines:
 
 ```
 /plugin marketplace add animesh-builds/animesh-product-builder-skills
 /plugin install animesh-product-builder-skills@animesh-skills
 ```
 
-Then say "new project: ..." and it takes over from there.
+Restart if it asks. Then say "new project: ..." and it takes over from there.
 
-If you do not use Claude Code, you can still try it. Paste this into a new Claude chat:
+### Try it in a normal Claude chat (no install)
 
-> Read https://raw.githubusercontent.com/animesh-builds/animesh-product-builder-skills/main/skills/animesh-product-builder-skills/SKILL.md and act as the planning partner it describes. Start by asking me a few questions about my project.
+Using Claude on the web or in the app instead? You cannot install a skill there, but you can still use it for a session. Paste this into a fresh chat:
+
+> Read https://raw.githubusercontent.com/animesh-builds/animesh-product-builder-skills/main/skills/animesh-product-builder-skills/SKILL.md and act as the planning partner it describes. It points to other files using relative paths like `references/workflow.md` and `references/templates/prd.md`. Resolve those against the folder that SKILL.md is in (keep the same URL prefix) and fetch them whenever it needs one. Start by asking me a few questions about my project.
+
+If your Claude cannot open web links, copy the contents of that page into the chat instead.
 
 ## License
 
