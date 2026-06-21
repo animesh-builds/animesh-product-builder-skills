@@ -2,9 +2,36 @@
 
 [![validate](https://github.com/animesh-builds/animesh-product-builder-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/animesh-builds/animesh-product-builder-skills/actions/workflows/validate.yml)
 
-Plan your software project properly before you build it.
+> Plan your software project properly before you build it. A planning skill for [Claude Code](https://docs.claude.com/en/docs/claude-code).
 
-This is a skill for [Claude Code](https://docs.claude.com/en/docs/claude-code). Instead of jumping straight into code, you talk your idea through with it, and it writes up a clean plan: what you are building, how it fits together, the decisions you made along the way, and a handoff note for whoever codes it. The build then starts from a real spec instead of a fuzzy memory of a conversation.
+## About the author
+
+Animesh is an AI builder and product manager working at the intersection of payments, fintech, and agentic commerce, and building in public the whole way.
+
+He builds the systems that sit behind modern checkout: AI-powered risk decisioning, conversational and agentic checkout, MCP-enabled multi-step payment execution, and the orchestration logic that ties checkout, settlement, and refunds into reliable flows. His work spans the full payments surface, from UPI and card flows to pre-authorization for high-value orders, EMI and offers, intelligent gateway routing, and cross-border multi-currency payments.
+
+Beyond product, Animesh ships agentic AI hands-on. His experiments include a WhatsApp AI agent (OpenClaw), an AI decisioning copilot for auto lending (AutoLendingOS), a citation-grounded personal "second brain," and an AI assistant embedded in Slack. Small, real builds that probe where agentic interfaces and autonomous commerce are actually heading.
+
+He writes about all of it (AI, product strategy, fintech, and building in public) through Build Signals, his newsletter and YouTube channel.
+
+An IIM Calcutta MBA and an Electronics & Communication engineer from VNIT Nagpur, Animesh pairs product judgment with a builder's instinct to ship. Always up for a conversation on agentic AI, payments, or the future of commerce.
+
+**Find me here:**
+
+- Website: https://animeshgiradkar.com
+- Newsletter: https://buildsignals.substack.com/
+- YouTube: https://youtube.com/@buildsignals
+- GitHub: https://github.com/animesh-builds
+- X: https://x.com/animeshbuilds
+- Email: hello@animeshgiradkar.com (or animeshg.connect@gmail.com)
+
+*Disclaimer: Content here is informational, not promotional. Views are my own and do not reflect any past or present employer or academic institution. Please do your own research before acting on anything shared. I respect copyrights, so reach out with any concerns.*
+
+---
+
+## What it does
+
+The skill acts as a planning partner, not a coder. You talk your idea through with it, and it writes up a clean plan: what you are building, how it fits together, the decisions you made along the way, and a handoff note for whoever codes it. The build then starts from a real spec instead of a fuzzy memory of a conversation.
 
 ## Why you'd want this
 
